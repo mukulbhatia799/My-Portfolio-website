@@ -1,0 +1,35 @@
+
+.project-outer-div {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.project-outer-div h1 {
+    font-weight: bold;
+  }
+  
+  .project-outer-div hr {
+    color: #128781;
+    width: 400px;
+    margin: 10px auto;
+  }
+
+.project-inner-div {
+    display: grid;
+    gap: 20px;
+    height: 670px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-outer-div {
+    margin-left: 70px;
+    /* margin-right: -150px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

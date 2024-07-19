@@ -1,0 +1,134 @@
+/* .home-outer-div {
+    background-color: black;
+    color: white;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.home-outer-div {
+    background-color: black;
+}
+
+.theme-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+}
+
+.theme-btn:hover {
+    background-color: rgb(234, 231, 231);
+}
+
+.home-inner-div {
+    color: white;
+    margin-left: 170px;
+    margin-right: 100px;
+    padding: 30px;
+}
+
+.resume-btn {
+    width: 150px;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typewriter-div {
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+}
+
+.buttons-div {
+    display: flex;
+    margin-top: 50px;
+}
+
+.download-btn {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passion-heading {
+    margin-top: 100px;
+}
+
+.social-links {
+    margin-top: 30px;
+    margin-left: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.linkedin-icon {
+    background-color: #0077B5;
+}
+
+.linkedin-icon:hover {
+    background-color: #073c58;
+}
+
+.github-icon {
+    /* background-color: #2B3137; */
+    background-color: #16181a;
+
+}
+
+.github-icon:hover {
+    background-color: #2B3137;
+    /* background-color: #16181a; */
+}
+
+.icon {
+    font-size: 35px;
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.icon:hover {
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .home-outer-div {
+        margin: 0;
+        background-color: black;
+        width: 1000px;
+    }
+    /* #light {
+        width: 1000px;
+    } */
+
+}
+
+@media screen and (max-width: 425px) {
+    .home-inner-div {
+        margin: 50px;
+    }
+}
+
+/* #dark {
+    background-color: rgb(47, 48, 45);
+}
+
+#dark .education-outer-div {
+    background-color: rgb(47, 48, 45);
+}
+
+#dark .skills-tech-div {
+    background-color: lightgrey;
+} */

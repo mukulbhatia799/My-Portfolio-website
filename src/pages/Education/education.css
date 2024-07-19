@@ -1,0 +1,30 @@
+.education-outer-div {
+    /* background-color: rgba(219, 240, 247, 0.5); */
+    /* background-color: rgba(169, 220, 237, 0.5); */
+}
+
+.education-outer-div h1 {
+    font-weight: bold;
+}
+
+.education-outer-div hr {
+    color: #128781;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.education-inner-div {
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 768px) {
+    .education-inner-div {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .education-outer-div {
+        margin-right: -240px;
+    }
+}
