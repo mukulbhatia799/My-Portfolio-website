@@ -17,7 +17,7 @@
     margin-left: 200px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .education-inner-div {
         margin: 0;
     }
@@ -27,4 +27,4 @@
     .education-outer-div {
         margin-right: -240px;
     }
-}
+} */

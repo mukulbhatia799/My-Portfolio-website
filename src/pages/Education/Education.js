@@ -5,7 +5,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 import { MdOutlineSchool } from "react-icons/md";
 
 const Education = () => {
-    return <div className="education-outer-div my-5">
+    return <div className="education-outer-div my-5" id="education-section">
         <h1 className="text-success text-center">Education</h1><hr />
         <div className="education-inner-div">
             <VerticalTimeline>

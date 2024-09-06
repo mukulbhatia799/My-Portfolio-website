@@ -5,6 +5,15 @@ import {FcHome, FcAbout, FcContacts} from 'react-icons/fc'
 import {GrTechnology} from 'react-icons/gr'
 import myProfilePic from '../../images/mukulpic.png'
 import {RiProjectorFill} from 'react-icons/ri'
+import { IoSchoolSharp } from "react-icons/io5";
+
+import '../../pages/Home/Home.js'
+import '../../pages/About/About.js'
+import '../../pages/Education/Education.js'
+import '../../pages/Skills/Skills.js'
+import '../../pages/Contact/Contact.js'
+import '../../pages/projects/Project.js'
+
 const Menus = ({toggle}) => {
     return <div>
         {!toggle ? (
@@ -13,41 +22,23 @@ const Menus = ({toggle}) => {
                     <img src={myProfilePic} alt="Mypic" width="150px" height="150px" className="profile-image" />
                 </div>
                 <div className="nav-items">
-                    <div className="nav-item">
-                        <div className="nav-link"><FcHome /> Home</div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><FcAbout /> About Me</div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><GrTechnology /> Tech skills</div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><RiProjectorFill /> Projects</div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><FcContacts /> Contact Me</div>
-                    </div>
+                        <a href="#home-section" className="nav-link"><FcHome /> Home</a>
+                        <a href="#about-section" className="nav-link"><FcAbout /> About Me</a>
+                        <a href="#education-section" className="nav-link"><IoSchoolSharp /> Education</a>
+                        <a href="#tech-section" className="nav-link"><GrTechnology /> Tech skills</a>
+                        <a href="#projects-section" className="nav-link"><RiProjectorFill /> Projects</a>
+                        <a href="#contact-section" className="nav-link"><FcContacts /> Contact Me</a>
                 </div>
             </div>
         ) : (
             <div>
                 <div className="nav-items">
-                    <div className="nav-item">
-                        <div className="nav-link"><FcHome /></div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><FcAbout /></div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><GrTechnology /></div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><RiProjectorFill /></div>
-                    </div>
-                    <div className="nav-item">
-                        <div className="nav-link"><FcContacts /></div>
-                    </div>
+                        <a href="#home-section" className="nav-link"><FcHome /></a>
+                        <a href="#about-section" className="nav-link"><FcAbout /></a>
+                        <a href="#education-section" className="nav-link"><IoSchoolSharp /></a>
+                        <a href="#tech-section" className="nav-link"><GrTechnology /></a>
+                        <a href="#projects-section" className="nav-link"><RiProjectorFill /></a>
+                        <a href="#contact-section" className="nav-link"><FcContacts /></a>
                 </div>
             </div>
         )}

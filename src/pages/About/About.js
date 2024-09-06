@@ -1,7 +1,7 @@
 import './about.css'
 function About() {
     return (
-        <div className="about-outer-div my-5">
+        <div className="about-outer-div my-5" id="about-section">
             <h1 className="text-success text-uppercase text-center">About Me</h1><hr />
             <div className="about-inner-div mt-5">
                 <div className="about-me-content">

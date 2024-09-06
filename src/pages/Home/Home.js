@@ -17,7 +17,7 @@ const Home = () => {
     // }
     return (
         <>
-            <div className="home-outer-div">
+            <div className="home-outer-div" id="home-section">
                 {/* <button className="theme-btn" onClick={themeChanger}>
                     {theme === 'light' ? (<PiSunLight size={30}/>):(<BsMoonStarsFill size={30}/>)}
                     

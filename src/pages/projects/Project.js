@@ -6,7 +6,7 @@ const Project = () => {
     const { projects } = data;
 
     return (
-        <div className="project-outer-div">
+        <div className="project-outer-div" id="projects-section">
             <h1 className="text-success text-center">Projects</h1><hr />
             <div className="project-inner-div overflow-auto my-5">
                 {projects.map(project => (

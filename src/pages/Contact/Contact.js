@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contact" id="contact">
+      <div className="contact" id="contact-section">
       <h1 className="text-center text-success">Contact ME</h1><hr />
         <div className="card card0 border-0 my-5">
           <div className="row">

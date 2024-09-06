@@ -103,23 +103,19 @@
     transition: 0.3s;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .home-outer-div {
         margin: 0;
         background-color: black;
         width: 1000px;
     }
-    /* #light {
-        width: 1000px;
-    } */
+} */
 
-}
-
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     .home-inner-div {
         margin: 50px;
-    }
-}
+    }   
+} */
 
 /* #dark {
     background-color: rgb(47, 48, 45);

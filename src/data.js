@@ -1,5 +1,8 @@
 import { nanoid } from 'nanoid';
-import care4u from './images/care4u.png'
+import care4u from './images/care4u-img.png'
+import trustPay from './images/trustpay-img.png'
+import rollDiceGame from './images/roll-dice-game.png'
+import portfolioImg from './images/portfolio-img.png'
 import html from './icons/html.svg'
 import css from './icons/css.svg'
 import javascript from './icons/javascript.svg'
@@ -157,67 +160,78 @@ const skills = [
 const projects = [
   {
     id: nanoid(),
-    title: 'care4u',
+    title: 'TrustPay Payment App',
+    img: trustPay,
+    desc: 'Made Payment easy online.',
+    technologies: ['React.js', 'Node.js', 'MongoDB', 'Mongoose', 'Express', 'Tailwind', 'JWT based authentication', 'MVC Architecture'],
+    github: 'https://github.com/mukulbhatia799/TrustPay-Project',
+    live: 'https://trustpay-payment-app.netlify.app/',
+  },
+
+  {
+    id: nanoid(),
+    title: 'Care4u',
     img: care4u,
-    desc: 'Social Media App where users can interact with each other through posts ',
-    technologies: ['React.js', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
+    desc: 'Hospital Bed Booking website.',
+    technologies: ['HTML', 'CSS', 'Vanilla JS'],
+    github: 'https://github.com/mukulbhatia799/Care4u-Hospital-Website',
+    live: 'https://care4u-mukul-bhatia.netlify.app/',
   },
   {
     id: nanoid(),
-    title: 'CodeTales',
-    img: care4u,
-    desc: 'A blogging Web Application where one can publish and read blogs 📖',
-    technologies: ['React.js', 'Node.js', 'MongoDB', 'Express'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
+    title: 'Roll a Dice Game',
+    img: rollDiceGame,
+    desc: "Play duo game online with your loved ones.",
+    technologies: ['HTML', 'CSS', 'Vanilla JS'],
+    github: 'https://github.com/mukulbhatia799/2-player-rolling-dice-game',
+    live: 'https://2-player-rolling-dice-game.netlify.app/',
   },
   {
     id: nanoid(),
-    title: 'FoodHunt',
-    img: care4u,
-    desc: "A food delivery App built using Reactjs and Powered by Swiggy's API",
-    technologies: ['React.js', 'TailwindCSS', 'Redux'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
-  },
-  {
-    id: nanoid(),
-    title: 'Codwiz',
-    img: care4u,
-    desc: 'An interactive quiz application to test your knowledge of programming languages.',
-    technologies: ['React.js', 'TypeScript', 'MantineUI'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
-  },
-  {
-    id: nanoid(),
-    title: 'Notes App',
-    img: care4u,
-    desc: 'A notes app where one can add quick notes on the go. Data is saved locally.',
-    technologies: ['React.js', 'Express', 'MongoDB'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
-  },
-  {
-    id: nanoid(),
-    title: 'Weather App',
-    img: care4u,
-    desc: 'A weather app that tells weather details based on search query (city, state, etc)',
-    technologies: ['React.js', 'flutter', 'Node.js'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
-  },
-  {
-    id: nanoid(),
-    title: 'Triangle Quiz',
-    img: care4u,
-    desc: 'How much  do  you know  about triangles 🔺? Test your skills.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/mukulbhatia799/MERN-Stack',
-    live: 'https://github.com/mukulbhatia799/MERN-Stack',
-  },
+    title: 'Portfolio Website',
+    img: portfolioImg,
+    desc: "Portfolio Website.",
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+    github: 'https://github.comab/mukulbhatia799/2-player-rolling-dice-game',
+    live: 'https://2-player-rolling-dice-game.netlify.app/',
+  }
+
+  // {
+  //   id: nanoid(),
+  //   title: 'Codwiz',
+  //   img: care4u,
+  //   desc: 'An interactive quiz application to test your knowledge of programming languages.',
+  //   technologies: ['React.js', 'TypeScript', 'MantineUI'],
+  //   github: 'https://github.com/mukulbhatia799/MERN-Stack',
+  //   live: 'https://github.com/mukulbhatia799/MERN-Stack',
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: 'Notes App',
+  //   img: care4u,
+  //   desc: 'A notes app where one can add quick notes on the go. Data is saved locally.',
+  //   technologies: ['React.js', 'Express', 'MongoDB'],
+  //   github: 'https://github.com/mukulbhatia799/MERN-Stack',
+  //   live: 'https://github.com/mukulbhatia799/MERN-Stack',
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: 'Weather App',
+  //   img: care4u,
+  //   desc: 'A weather app that tells weather details based on search query (city, state, etc)',
+  //   technologies: ['React.js', 'flutter', 'Node.js'],
+  //   github: 'https://github.com/mukulbhatia799/MERN-Stack',
+  //   live: 'https://github.com/mukulbhatia799/MERN-Stack',
+  // },
+  // {
+  //   id: nanoid(),
+  //   title: 'Triangle Quiz',
+  //   img: care4u,
+  //   desc: 'How much  do  you know  about triangles 🔺? Test your skills.',
+  //   technologies: ['HTML', 'CSS', 'JavaScript'],
+  //   github: 'https://github.com/mukulbhatia799/MERN-Stack',
+  //   live: 'https://github.com/mukulbhatia799/MERN-Stack',
+  // },
 ];
 
 export const data = { projects, skills };

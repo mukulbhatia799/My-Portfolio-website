@@ -21,15 +21,17 @@
     height: 670px;
     margin-bottom: 100px;
 }
-
-@media screen and (max-width: 768px) {
+/* 
+@media screen and (max-width: 1200px) {
   .project-outer-div {
-    margin-left: 70px;
-    /* margin-right: -150px; */
-    width: 100%;
+    margin: 0;
+    margin-right: -500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
+  .project-inner-div {
+    
+  }
+} */

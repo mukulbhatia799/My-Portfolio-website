@@ -5,10 +5,10 @@ const ProjectCard = ({ project }) => {
         <div className="project-thumbnail">
             <img src={project.img} alt={project.title} width="100%"/>
             <div className="buttons">
-                <a href={project.live}>
+                <a href={project.live} target='_blank'>
                     <button className="btn btn-lg btn-secondary text-light">Live</button>
                 </a>
-                <a href={project.github}>
+                <a href={project.github} target='_blank'>
                     <button className="btn btn-lg btn-dark">Github</button>
                 </a>
             </div>

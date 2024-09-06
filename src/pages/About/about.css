@@ -16,13 +16,17 @@
 .about-inner-div {
   margin-left: 220px;
   margin-right: 200px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .first-line {
   font-size: 30px;
   font-weight: bold;
+}
+
+.para-content {
+  width: fit-content;
 }
 
 .para-content p {
@@ -34,11 +38,44 @@
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
+/* 
+@media screen and (max-width: 1440px) {
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-inner-div {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-outer-div {
+    margin-right: -240px;
+  }
+
+  .about-inner-div {
+    margin: 50px;
+  }
+} */
+
+/* @media screen and (max-width: 425px) {
+  .about-inner-div {
+    margin: 100px;
+  }
+} */
+
+@media screen and (max-width: 1300px) {
+  .about-me-content {
+    grid-template-columns: 1fr;
+  }
+}
 
 
-/*  */
-
-
+/* cup css */
 #cup-container {
   padding: 55px 10px 10px 54px;
 }
@@ -182,34 +219,4 @@
   margin-left: 6px;
   background-color: #afb4b5;
 }
-
-
-@media screen and (max-width: 1440px) {
-  .about-me-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-inner-div {
-    margin-right: 50px;
-    /* margin-left: 200px; */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .about-outer-div {
-    margin-right: -240px;
-  }
-
-  .about-inner-div {
-    margin: 50px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .about-inner-div {
-    margin: 100px;
-  }
-}
+/* cup css ends */

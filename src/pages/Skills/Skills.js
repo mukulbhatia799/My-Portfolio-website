@@ -5,7 +5,7 @@ const Skills = () => {
     const { skills } = data;
     return (
         <>  
-            <div className="skills-container">
+            <div className="skills-container" id="tech-section">
                 <h1 className="text-success text-center">Technologies</h1><hr />
                 <div className="skills-tech-stack mt-5">
                     {skills.map(tech => {
