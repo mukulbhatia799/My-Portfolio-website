@@ -2,7 +2,7 @@ import React from "react";
 import "./home.css"
 // import { useTheme } from "../../context/ThemeContext";
 import Typewriter from 'typewriter-effect';
-import mukulResume from '../../images/MukulBhatia-Resume-15thJuly.pdf';
+import mukulResume from '../../images/MUKULBHATIA_12322024.pdf';
 import { FiDownload } from 'react-icons/fi';
 import { FaGithub } from "react-icons/fa";
 // import { PiSunLight } from "react-icons/pi";
