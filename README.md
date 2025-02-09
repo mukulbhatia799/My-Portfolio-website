@@ -1,3 +1,3 @@
 # Portfolio Website
 
-## [Live Link](https://portfolio-website-mukulbhatia.netlify.app/)
+## [Live Link](https://mukulbhatia-portfolio.netlify.app/)
