@@ -1,90 +1,93 @@
 .contact {
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 60px;
+  margin: 0;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .contact > h1 {
   font-weight: bold;
+  text-align: center;
 }
 
 .contact hr {
   color: #128781;
-  width: 400px;
+  width: 60%;
   margin: 7px auto;
 }
 
 .card0 {
   box-shadow: 0px 4px 8px 0px #757575;
-  border-radius: 0px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .card2 {
-  margin: 0px 40px;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card1 .image {
-  padding: 30px;
-  margin-top: 30px;
-  height: 100%;
+  padding: 20px;
+  margin-top: 20px;
   width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
 }
+
 .border-line {
   border-right: 1px solid #e0e0e0;
 }
+
 .line {
   height: 1px;
-  width: 45%;
+  width: 40%;
   background-color: #e0e0e0;
-  margin-top: 10px;
+  margin: 10px auto;
 }
 
 .or {
   display: flex;
   width: 10%;
   font-weight: bold;
-}
-
-::placeholder {
-  color: #bdbdbd;
-  opacity: 1;
-  font-weight: 300;
+  justify-content: center;
+  margin: 5px auto;
 }
 
 input,
 textarea {
-  padding: 10px 12px;
+  padding: 10px;
   border: 1px solid lightgray;
-  border-radius: 2px;
-  margin-top: 5px;
-  margin-top: 2px;
+  border-radius: 5px;
   width: 100%;
   color: #138781;
   font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-input:focus,
-textarea:focus {
-  box-shadow: none !important;
-  outline: 1px solid #138781 !important;
-  outline-width: 0px;
-}
-
-button:focus {
-  box-shadow: none;
-  outline-width: 0px;
+  margin-top: 5px;
+  box-sizing: border-box;
 }
 
 .button {
   background-color: #1e1e2c;
   color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-top: 15px;
   padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .button:hover {
@@ -92,22 +95,93 @@ button:focus {
   color: white;
 }
 
-/* ======================== */
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
 
-/* @media (max-width: 768px) {
+.social-icons a {
+  margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .contact hr {
+    width: 80%;
+  }
+  
+  .border-line {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .contact {
     margin: 0;
-    padding: 0;
-    margin-top: 50px;
-    width: 1000px;
-  }
-  .contact .card2 {
-    margin: 0;
+    padding: 10px 0;
   }
 
-  .contact .card2 h6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .contact hr {
+    width: 90%;
   }
-} */
+
+  .card0 {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px 0px #757575;
+  }
+
+  .card2 {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .card1 .image {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 100%;
+    display: block;
+  }
+
+  .line {
+    width: 30%;
+  }
+
+  .or {
+    width: 20%;
+  }
+  
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .row > div {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  .card2 {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+}

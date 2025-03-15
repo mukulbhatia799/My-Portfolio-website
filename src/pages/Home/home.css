@@ -1,130 +1,177 @@
-/* .home-outer-div {
-    background-color: black;
-    color: white;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+/* Reset box-sizing for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+/* Base styles */
 .home-outer-div {
-    background-color: black;
+  background-color: black;
+  /* margin-left: 100px; */
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .theme-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 0;
-    top: 50px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px;
+  z-index: 100;
 }
 
 .theme-btn:hover {
-    background-color: rgb(234, 231, 231);
+  background-color: rgb(234, 231, 231);
 }
 
 .home-inner-div {
-    color: white;
-    margin-left: 170px;
-    margin-right: 100px;
-    padding: 30px;
+  color: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .resume-btn {
-    width: 150px;
-    margin-right: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 150px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .typewriter-div {
-    font-size: 30px;
-    font-weight: bold;
-    color: orange;
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
 }
 
 .buttons-div {
-    display: flex;
-    margin-top: 50px;
+  display: flex;
+  margin-top: 50px;
 }
 
 .download-btn {
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .passion-heading {
-    margin-top: 100px;
+  margin-top: 100px;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .social-links {
-    margin-top: 30px;
-    margin-left: 50px;
-    display: flex;
-    gap: 30px;
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .linkedin-icon {
-    background-color: #0077B5;
+  background-color: #0077B5;
 }
 
 .linkedin-icon:hover {
-    background-color: #073c58;
+  background-color: #073c58;
 }
 
 .github-icon {
-    /* background-color: #2B3137; */
-    background-color: #16181a;
-
+  background-color: #16181a;
 }
 
 .github-icon:hover {
-    background-color: #2B3137;
-    /* background-color: #16181a; */
+  background-color: #2B3137;
 }
 
 .icon {
-    font-size: 35px;
-    color: white;
-    border: 1px solid white;
-    padding: 3px;
+  font-size: 35px;
+  color: white;
+  border: 1px solid white;
+  padding: 3px;
 }
 
 .icon:hover {
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
-/* @media screen and (max-width: 768px) {
-    .home-outer-div {
-        margin: 0;
-        background-color: black;
-        width: 1000px;
-    }
-} */
-
-/* @media screen and (max-width: 425px) {
-    .home-inner-div {
-        margin: 50px;
-    }   
-} */
-
-/* #dark {
-    background-color: rgb(47, 48, 45);
+/* Media query for desktops */
+@media screen and (min-width: 1025px) {
+  .home-inner-div {
+    padding-left: 170px;
+    padding-right: 100px;
+  }
+  
+  .social-links {
+    margin-left: 50px;
+  }
 }
 
-#dark .education-outer-div {
-    background-color: rgb(47, 48, 45);
+/* Media query for tablets */
+@media screen and (max-width: 1024px) {
+  .home-inner-div {
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+  
+  .social-links {
+    margin-left: 20px;
+  }
 }
 
-#dark .skills-tech-div {
-    background-color: lightgrey;
-} */
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .home-inner-div {
+    padding: 20px;
+  }
+
+  .typewriter-div {
+    font-size: 24px;
+  }
+
+  .passion-heading {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  .buttons-div {
+    margin-top: 30px;
+  }
+
+  .social-links {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+}
+
+/* Additional styles for very small screens */
+@media screen and (max-width: 480px) {
+  .buttons-div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .download-btn {
+    margin-top: 10px;
+  }
+  
+  .passion-heading {
+    font-size: 16px;
+  }
+}

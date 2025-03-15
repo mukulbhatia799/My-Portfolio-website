@@ -5,6 +5,7 @@ import "./Contact.css";
 import Rotate from "react-reveal/Rotate";
 import LightSpeed from "react-reveal/LightSpeed";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+
 const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +16,8 @@ const Contact = () => {
     e.preventDefault();
     try {
       if (!name || !email || !msg) {
-        toast.error("PLease Provide all fields");
+        toast.error("Please Provide all fields");
+        return;
       }
       const res = await axios.post("/api/v1/portfolio/sendEmail", {
         name,
@@ -33,89 +35,91 @@ const Contact = () => {
       }
     } catch (error) {
       console.log(error);
+      toast.error("Something went wrong!");
     }
   };
 
   return (
-    <>
-      <div className="contact" id="contact-section">
-      <h1 className="text-center text-success">Contact ME</h1><hr />
-        <div className="card card0 border-0 my-5">
-          <div className="row">
-            <div className="col-md-12 col-lg-6 col-xl-6 col-sm-12">
-              <div className="card1">
-                <div className="row border-line">
-                  <LightSpeed>
-                    <img
-                      src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
-                      alt="ocontact"
-                      className="image"
-                    />
-                  </LightSpeed>
-                </div>
+    <div className="contact" id="contact-section">
+      <h1 className="text-center text-success">Contact ME</h1>
+      <hr />
+      <div className="card card0 border-0 my-5">
+        <div className="row g-0"> {/* Added g-0 to remove gutters */}
+          <div className="col-md-12 col-lg-6">
+            <div className="card1">
+              <div className="border-line">
+                <LightSpeed>
+                  <img
+                    src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
+                    alt="contact"
+                    className="image"
+                  />
+                </LightSpeed>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12">
-              <Rotate>
-                <div className="card2 d-flex card border-0 px-4 py-5">
-                  <div className="row">
-                    <div className="row">
-                      <h6>
-                        Contact With
-                        <BsLinkedin color="blue" size={30} className="ms-2" />
-                        <BsGithub color="black" size={30} className="ms-2" />
-                        <BsFacebook color="blue" size={30} className="ms-2" />
-                      </h6>
-                    </div>
+          </div>
+          <div className="col-lg-6 col-md-12">
+            <Rotate>
+              <div className="card2 card border-0">
+                <div className="w-100">
+                  <div className="social-icons">
+                    <h6>Contact With</h6>
+                    <a href="#linkedin">
+                      <BsLinkedin color="blue" size={30} className="ms-2" />
+                    </a>
+                    <a href="#github">
+                      <BsGithub color="black" size={30} className="ms-2" />
+                    </a>
+                    <a href="#facebook">
+                      <BsFacebook color="blue" size={30} className="ms-2" />
+                    </a>
+                  </div>
 
-                    <div className="row px-3 mb-4">
-                      <div className="line" />
-                      <small className="or text-center">OR</small>
-                      <div className="line" />
-                    </div>
-                    <div className="row px-3">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Enter your Name"
-                        className="mb-3"
-                        value={name}
-                        onChange={(e) => setname(e.target.value)}
-                      />
-                    </div>
-                    <div className="row px-3">
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter Your Email Address"
-                        className="mb-3"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                    </div>
-                    <div className="row px-3">
-                      <textarea
-                        type="text"
-                        name="msg"
-                        placeholder="Write your message"
-                        className="mb-3"
-                        value={msg}
-                        onChange={(e) => setMsg(e.target.value)}
-                      />
-                    </div>
-                    <div className="row px-3">
-                      <button className="button" onClick={handleSubmit}>
-                        SEND MESSAGE
-                      </button>
-                    </div>
+                  <div className="mb-4">
+                    <div className="line" />
+                    <small className="or text-center">OR</small>
+                    <div className="line" />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Enter your Name"
+                      value={name}
+                      onChange={(e) => setname(e.target.value)}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter Your Email Address"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <textarea
+                      type="text"
+                      name="msg"
+                      placeholder="Write your message"
+                      value={msg}
+                      onChange={(e) => setMsg(e.target.value)}
+                      rows="4"
+                    />
+                  </div>
+                  <div>
+                    <button className="button" onClick={handleSubmit}>
+                      SEND MESSAGE
+                    </button>
                   </div>
                 </div>
-              </Rotate>
-            </div>
+              </div>
+            </Rotate>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

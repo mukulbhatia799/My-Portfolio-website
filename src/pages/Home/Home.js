@@ -1,27 +1,16 @@
 import React from "react";
 import "./home.css"
-// import { useTheme } from "../../context/ThemeContext";
 import Typewriter from 'typewriter-effect';
-import mukulResume from '../../images/0_MukulBhatia-26thDec-Resume.pdf';
+import mukulResume from '../../images/_MukulBhatia_Resume_2025.pdf';
 import { FiDownload } from 'react-icons/fi';
 import { FaGithub } from "react-icons/fa";
-// import { PiSunLight } from "react-icons/pi";
-// import { BsMoonStarsFill } from "react-icons/bs";
 
 import { FaLinkedinIn } from "react-icons/fa";
 
 const Home = () => {
-    // const [theme, setTheme] = useTheme();
-    // const themeChanger = () => {
-    //     setTheme((prevTheme) => (prevTheme === 'light')?'dark':'light')
-    // }
     return (
         <>
             <div className="home-outer-div" id="home-section">
-                {/* <button className="theme-btn" onClick={themeChanger}>
-                    {theme === 'light' ? (<PiSunLight size={30}/>):(<BsMoonStarsFill size={30}/>)}
-                    
-                </button> */}
                 <div className="home-inner-div">
                     <h1>Hi I'm a </h1>
                     <h1 className="typewriter-div">
