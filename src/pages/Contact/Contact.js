@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import "./Contact.css";
@@ -10,6 +10,32 @@ const Contact = () => {
   const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Check if sidebar is open by looking for a class on the body or checking a global state
+  useEffect(() => {
+    // Method 1: Check for a class on body element
+    const checkSidebarStatus = () => {
+      const sidebarOpen = document.body.classList.contains('sidebar-open');
+      setIsSidebarOpen(sidebarOpen);
+    };
+
+    // Initial check
+    checkSidebarStatus();
+
+    // Set up a MutationObserver to watch for class changes on body
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        if (mutation.attributeName === 'class') {
+          checkSidebarStatus();
+        }
+      });
+    });
+
+    observer.observe(document.body, { attributes: true });
+
+    return () => observer.disconnect();
+  }, []);
 
   //handle submit button
   const handleSubmit = async (e) => {
@@ -40,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact-section">
+    <div className={`contact ${isSidebarOpen ? 'sidebar-adjusted' : ''}`} id="contact-section">
       <h1 className="text-center text-success">Contact ME</h1>
       <hr />
       <div className="card card0 border-0 my-5">

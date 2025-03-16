@@ -7,6 +7,9 @@
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  /* Ensure contact respects the sidebar */
+  position: relative;
+  z-index: 1; /* Lower z-index than sidebar */
 }
 
 .contact > h1 {

@@ -23,7 +23,7 @@ const Home = () => {
                             }}
                         />
                     </h1>
-                    <h2 className="passion-heading">Passionate about Technology and Problem Solving | Life long learner</h2>
+                    <h2 className="passion-heading">Passionate about Technology and Problem Solving</h2>
                     <div className="buttons-div">
                         <a className="btn btn-primary resume-btn" href={mukulResume} target="_blank">My Resume</a>
                         <a className="btn btn-light download-btn" href={mukulResume} download={"MukulResume"}>

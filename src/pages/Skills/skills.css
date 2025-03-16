@@ -90,6 +90,9 @@
     }
 
     .skills-tech-div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
         width: 100px;
         height: auto;
         padding: 6px;
@@ -121,6 +124,8 @@
     }
 
     .skills-tech-div {
+        display: flex;
+        flex-direction: column;
         width: 80px;
         padding: 5px;
         margin: 4px;

@@ -1,7 +1,9 @@
 .project-outer-div {
-  margin: 50px auto;
+  position: relative;
+  margin-left: 100px; /* Sidebar spacing */
+  width: calc(100% - 100px); /* Width accounting for sidebar */
   padding: 20px;
-  max-width: 1200px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .project-outer-div h1 {
@@ -16,6 +18,8 @@
 }
 
 .project-inner-div {
+  max-width: 1200px; /* Maximum width constraint */
+  margin: 50px auto; /* Center horizontally with vertical spacing */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -25,11 +29,13 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .project-outer-div {
-    margin: 20px auto;
+    margin-left: 0; /* Remove sidebar margin on mobile */
+    width: 100%;
     padding: 10px;
   }
 
   .project-inner-div {
+    margin: 20px auto; /* Less spacing on mobile */
     grid-template-columns: 1fr;
   }
 }

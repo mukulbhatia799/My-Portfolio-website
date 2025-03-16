@@ -1,5 +1,38 @@
 .about-outer-div {
   color: black;
+  background-color: white;
+  margin-left: 100px; /* Match sidebar width */
+  width: calc(100% - 100px); /* Adjust width to account for sidebar */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  /* min-height: 100vh; Full height */
+}
+
+.about-content-wrapper {
+  padding: 1.25rem; /* 20px - matches my-5 px-4 from original */
+}
+
+/* Tablet and larger */
+@media (min-width: 640px) {
+  .about-content-wrapper {
+    padding-left: 2.5rem; /* 40px - matches sm:px-10 */
+    padding-right: 2.5rem;
+  }
+}
+
+/* Desktop and larger */
+@media (min-width: 1024px) {
+  .about-content-wrapper {
+    padding-left: 5rem; /* 80px - matches lg:px-20 */
+    padding-right: 5rem;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+  .about-content-wrapper {
+    padding-left: 10rem; /* 160px - matches xl:px-40 */
+    padding-right: 10rem;
+  }
 }
 
 .about-outer-div h1 {
@@ -7,18 +40,9 @@
 }
 
 .about-inner-div {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Responsive Grid for Larger Screens */
-@media (min-width: 1024px) {
-  .about-inner-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Cup Animation Responsiveness */
@@ -29,5 +53,13 @@
 @media (min-width: 768px) {
   #cup-container {
     transform: scale(1);
+  }
+}
+
+/* Mobile view - remove sidebar margin */
+@media (max-width: 768px) {
+  .about-outer-div {
+    margin-left: 0;
+    width: 100%;
   }
 }
